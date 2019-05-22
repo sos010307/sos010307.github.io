@@ -1,15 +1,28 @@
 *{margin: 0;padding: 0;text-align: center;position: relative;}
 html,body{width: 100%;height: 100%;}
-#wrap{width: 100%;height: auto;position: absolute;}
+::-webkit-scrollbar { 
+		display: none !important;
+}
+#wrap{width: 100%;height: 500%;}
 
-section{width: 100%;height: 100%;}
+section{display: none;width: 100%;height: calc(100%/5);overflow: hidden;}
 
-#whoAmI{background: #A593E0;}
+.side-bar{
+	position: fixed;
+	width: 100px;
+	height: 400px;
+	background: #fff;
+	z-index: 999;
+	top: 20%;
+	right: 0;
+}
 
-#aboutMe{background: #E0E3DA;}
+#whoAmI{background: #f6ea8c;}
 
-#prject1{background: #FFFFF3;}
+#aboutMe{background: #f26d5b;}
 
-#project2{background: #566270;}
+#project1{background: #c03546;}
+
+#project2{background: #492540;}
 
 #github{background: #333030;}
