@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>어서오세요</title>
+	<style>
+		h3{float: left;position: relative;}
+	</style>
+</head>
+<body scroll="no">
+	<div id="wrap">
+		<h3>t</h3>
+		<h3>e</h3>
+		<h3>s</h3>
+		<h3>t</h3>
+	</div>
+</body>
+<script src="./js/jquery-1.10.2.js"></script>
+<script>
+	for (i=0; i < 100; i++) {
+        (function(x) {
+            setTimeout(function() {
+             	console.log(x);
+                	var tg = $("#wrap > h3");
+                    $(tg[x%4]).animate({top:"-10px"})
+                    $(tg[x%4]).siblings().animate({top:"0px"})
+         }, 1000*x);
+        })(i);
+    }
+</script>
+</html>
